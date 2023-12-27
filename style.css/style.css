@@ -19,7 +19,19 @@ body {
 .container img {
   max-width: 600px;
 }
-div{
+div {
   margin-left: -8px;
+}
+.header_top {
+  height: 40px;
+  background-color: #861313;
+}
+.head_menu {
+  padding-top: 10px;
+  padding-left: 20px;
+  color: aliceblue;
+}
+a{
+  color: aliceblue;
 }
 /*  */
