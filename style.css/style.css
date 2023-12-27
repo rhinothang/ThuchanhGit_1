@@ -34,4 +34,6 @@ div {
 a{
   color: aliceblue;
 }
+a:hover{color: blue;}
+a:visited{color: blueviolet;}
 /*  */
