@@ -1,54 +1,106 @@
-.header_top {
-  background-color: #5d0505;
-  margin: 0px;
-  padding-top: 15px;
-  padding-left: 30px;
-  height: 35px;
+* {
+  box-sizing: border-box;
 }
-.header_top a {
-  color: rgb(255, 255, 255);
+html {
+  font-size: 62.5%;
 }
-.header_top a:hover {
-  color: black;
+/* Xử lý các tag body */
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins";
 }
-/* .header_top a:visited {
-  color: rgb(199, 233, 145);
+/* Các vấn đề của thẻ main-content */
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  border: 1px solid grey;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+/* .main-content .body{
+align-content: center;
+
 } */
-.header_top a:active {
-  color: aliceblue;
+/* Xử lý các tag header và class con */
+header {
+  height: 100px;
+  background-color: bisque;
+  display: flex;
 }
-.header_title {
-  background-color: antiquewhite;
-  margin: 0px;
-  height: 150px;
-  padding: 95px 0 0 30px;
+/* Những vấn đề liên quan đến thẻ a */
+a {
+  text-decoration: none;
 }
-.header_title h1 {
-  font-size: 50px;
-  font-weight: bold;
-  color: rgb(167, 72, 13);
+.nav li.active a,
+.nav a:hover {
+  color: blueviolet;
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor;
+}
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+  /* font-style: normal;
+  font-weight: 400; */
+  /* line-height: 28px; 175% */
+}
+.nav li.active a::after {
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: black;
 }
 
-.container {
-  width: 800px;
-  height: 1000px;
-  background-color: beige;
-  margin-top: 20px;
-  margin-left: 20px;
+/* ----------Hết thẻ a----------- */
+/* Các vấn đề của thẻ header */
+/* header .header {
+}
+.main-content {
+} */
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 22px 0 8px;
+}
+.header.fixed {
+  position: sticky;
+  top: -14px;
+}
+/* Các vấn đền của nav */
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+}
+/* Các vấn đề nút bấm */
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0px 16px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 50px;
   text-align: center;
-  border: 3px solid rgb(21, 148, 14);
+  width: 144px;
+  /* height: 50px; */
+  border-radius: 24.5px;
+  background: #171100;
 }
-.container img {
-  width: 600px;
+.btn-sign-up {
+  min-width: 114px;
 }
-.container h1 {
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(21, 148, 14);
-  padding-top: 30px;
-}
-.container p {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 21px;
+.header .action{
+  margin-left: 49px;
 }
